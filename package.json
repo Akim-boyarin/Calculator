@@ -1,0 +1,55 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "web-calculator",
+  "private": true,
+  "scripts": {
+    "test": "webpack",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akim-boyarin/Calculator.git"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "keywords": [
+    "js",
+    "javascript",
+    "react"
+  ],
+  "author": "Akim Boyarinov <akim.boyarinov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akim-boyarin/Calculator/issues"
+  },
+  "homepage": "https://github.com/Akim-boyarin/Calculator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.6.0",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "eslint": "^8.9.0",
+    "eslint-plugin-react": "^7.28.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "sass": "^1.49.8",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
