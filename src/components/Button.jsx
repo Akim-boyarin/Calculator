@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Key(props) {
+export default function Button(props) {
     let keyValue = props.keyValue;
     
     return (
         <div>
-            <button>{keyValue}</button>
+            <button value={keyValue} tabIndex="-1">{keyValue}</button>
         </div>
     );
 }
