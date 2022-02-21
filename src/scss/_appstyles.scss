@@ -1,4 +1,17 @@
+.app {
+    width: 100%;
+    height: 100%;
+    background-color: $app-background;
+
+    &__buffer {
+        
+    }
+}
+
+
+
 .calculator {
+    @include set-flex-rules(column, center, flex-start);
     
     &__display {}
     &__input-field-container {}

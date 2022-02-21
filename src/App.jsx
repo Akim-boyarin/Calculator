@@ -35,24 +35,22 @@ export default function App() {
         setCalculationResult('');
     };
 
-    let pressHandler = (event) => {
-        console.log(event);
-    };
-
     return (
-        <div className="calculator" onKeyDown={pressHandler}>
-            <Display
-                expression={expression}
-                setExpression={setExpression}
-                calculationResult={calculationResult}
-                calculateResult={calculateResult}
-                dropState={dropState}
-            />
-            <Keyboard 
-                complementExpression={complementExpression}
-                calculateResult={calculateResult}
-                dropState={dropState}
-            />
+        <div className="app__buffer">
+            <div className="calculator">
+                <Display
+                    expression={expression}
+                    setExpression={setExpression}
+                    calculationResult={calculationResult}
+                    calculateResult={calculateResult}
+                    dropState={dropState}
+                />
+                <Keyboard 
+                    complementExpression={complementExpression}
+                    calculateResult={calculateResult}
+                    dropState={dropState}
+                />
+            </div>
         </div>
     );
 }
