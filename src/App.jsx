@@ -35,8 +35,12 @@ export default function App() {
         setCalculationResult('');
     };
 
+    let pressHandler = (event) => {
+        console.log(event);
+    };
+
     return (
-        <div>
+        <div onKeyDown={pressHandler}>
             <Display
                 expression={expression}
                 setExpression={setExpression}

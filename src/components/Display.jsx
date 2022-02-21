@@ -23,7 +23,7 @@ export default function Display(props) {
 
     return (
         <div>
-            <input type="text" value={expression} onChange={changeHandler} onKeyDown={pressHandler} tabIndex="1"/>
+            <input type="text" value={expression} onChange={changeHandler} onKeyDown={pressHandler} tabIndex="1" autoFocus/>
             <p>{calculationResult}</p>
         </div>
     );
