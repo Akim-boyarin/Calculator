@@ -11,14 +11,14 @@ git clone https://github.com/Akim-boyarin/Calculator.git
 ```
 npm i
 ```
-### Work with calculator
+### Working with calculator
 You need to use next commands:
 
-*bundle to production version*
+- *bundle to production version*
 ```
 npm run build
 ```
-*bundle to developer version*
+- *bundle to developer version*
 ```
 npm run dev
 ```
