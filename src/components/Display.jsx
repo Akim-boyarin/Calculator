@@ -5,7 +5,7 @@ export default function Display(props) {
 
     let changeHandler = (event) => {
         const validSymbols = '.0123456789+-*/()';
-        
+
         let value = event.target.value;
         let currentSymbol = value.substr(-1);
 
@@ -23,9 +23,11 @@ export default function Display(props) {
     };
 
     return (
-        <div>
-            <input type="text" value={expression} onChange={changeHandler} onKeyDown={pressHandler} tabIndex="1" autoFocus/>
-            <p>{calculationResult}</p>
+        <div className="calculator__display">
+            <div className="calculator__input-field-container">
+                <input className="calculator__input-field" type="text" value={expression} onChange={changeHandler} onKeyDown={pressHandler} tabIndex="1" autoFocus/>
+            </div>
+            <div className="calculator__result-panel">{calculationResult}</div>
         </div>
     );
 }

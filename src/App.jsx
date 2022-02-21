@@ -40,7 +40,7 @@ export default function App() {
     };
 
     return (
-        <div onKeyDown={pressHandler}>
+        <div className="calculator" onKeyDown={pressHandler}>
             <Display
                 expression={expression}
                 setExpression={setExpression}
@@ -56,7 +56,3 @@ export default function App() {
         </div>
     );
 }
-
-/*
-
-*/

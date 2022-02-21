@@ -19,5 +19,5 @@ export default function Keyboard(props) {
         }
     };
 
-    return <div onClick={clickHandler}>{calculatorButtonsList}</div>;
+    return <div className="calculator__keyboard" onClick={clickHandler}>{calculatorButtonsList}</div>;
 }
