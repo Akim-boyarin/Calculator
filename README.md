@@ -1,6 +1,6 @@
 # Calculator
 
-This is web calculator, it was made by using stack **React**/**SCSS**. The project was bundled using **Webpack**, with some necessary tools, like **Babel**. The full list of them you can see [here](https://github.com/Akim-boyarin/Calculator/blob/master/package.json). Also in the project was used **ESlint** for testing.
+This is web calculator, it was made by using stack **React**/**SCSS**. The project was bundled using **Webpack**, with some necessary tools, like **Babel**. Total configs of the project you can see [here](https://github.com/Akim-boyarin/Calculator/blob/master/package.json), and configs of bundle - [here](https://github.com/Akim-boyarin/Calculator/blob/master/webpack.config.js)
 
 ### Before using
 1. You need to clone this repository.
