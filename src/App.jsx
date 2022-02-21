@@ -16,7 +16,7 @@ export default function App() {
         let potentialResult = '';
 
         try {
-            potentialResult = `${eval(expression)}`;
+            potentialResult = `${+eval(expression).toFixed(7)}`;
         } catch (error) {
             console.log(`${error.name}: ${error.message}`);
             potentialResult = 'error';
@@ -35,9 +35,11 @@ export default function App() {
         setCalculationResult('');
     };
 
+    let classes = ["calculator"].join(' ');
+
     return (
-        <div className="app__buffer">
-            <div className="calculator">
+        <div className={classes}>
+            <div className="calculator__content-container">
                 <Display
                     expression={expression}
                     setExpression={setExpression}

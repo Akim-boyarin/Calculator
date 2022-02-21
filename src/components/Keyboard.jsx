@@ -6,6 +6,8 @@ export default function Keyboard(props) {
     const keyValues = ['C', '(', ')', '/', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '00', '0', '.', '='];
     let calculatorButtonsList = keyValues.map((keyValue) => <Button keyValue={keyValue} key={'#' + keyValue}/>);
 
+    
+
     let clickHandler = (event) => {
         if (event.target.tagName !== 'BUTTON') return;
         let currentValue = event.target.value;

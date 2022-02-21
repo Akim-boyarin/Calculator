@@ -2,22 +2,76 @@
     width: 100%;
     height: 100%;
     background-color: $app-background;
-
-    &__buffer {
-        
-    }
+    @include put-content-to-center();
 }
 
 
-
 .calculator {
-    @include set-flex-rules(column, center, flex-start);
+    width: 90%;
+    // зафиксировать ширину для мобильного устройства
+    max-width: 288px;
+    padding: 20px;
+    @include border-style();
+    background-color: $buffer-color;
+    @include put-content-to-center();
     
-    &__display {}
-    &__input-field-container {}
-    &__input-field {}
-    &__result-panel {}
-    &__keyboard {}
-    &__key-container {}
-    &__key {}
+    &__content-container {
+        width: 100%;
+        padding: 25px;
+        padding-top: 45px;
+        @include border-style();
+        background: $calculator-color;
+        @include set-flex-rules(column, center, flex-start, no-wrap);
+    }
+    &__display {
+        width: 100%;
+        border-bottom: 1px solid $dividing-line-color;
+        @include set-flex-rules(column, center, flex-start, no-wrap);
+    }
+    &__input-field-container {
+        width: 100%;
+        margin-bottom: 25px;
+        color: $text-color;
+    }
+    &__input-field {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        font-family: 'Museo Sans Cyrl', sans-serif;
+        text-align: right;
+        background-color: transparent;
+        color: $text-color;
+    }
+    &__result-panel {
+        width: 100%;
+        height: 1em;
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-family: 'Museo Sans Cyrl', sans-serif;
+        font-weight: 700;
+        text-align: right;
+        color: $text-color;
+    }
+    &__keyboard {
+        width: 100%;
+        padding-top: 15px;
+        @include set-flex-rules(row, center, space-between, wrap);
+    }
+    &__key-container {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    &__key {
+        @include key-style();
+    }
+
+    &__key:hover {
+        background-color: $button-hover-color;
+    }
+
+    &__key:focus {
+        background-color: $button-pressed-color;
+        color: $text-color-modified;
+    }
 }
