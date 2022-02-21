@@ -5,6 +5,7 @@ export default function Display(props) {
 
     let changeHandler = (event) => {
         const validSymbols = '.0123456789+-*/()';
+        
         let value = event.target.value;
         let currentSymbol = value.substr(-1);
 
